@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance {
     fun getMoviesInstance() : RetrofitInterface{
-        val BASE_URL="https://www.omdbapi.com/"
+        val BASE_URL="https://www.omdbapi.com"
 
         val retrofit = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())

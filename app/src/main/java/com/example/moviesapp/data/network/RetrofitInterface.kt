@@ -6,6 +6,6 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface RetrofitInterface {
-    @GET("")
+    @GET("/")
     fun getMovies(@Query("apikey")apikey:String, @Query("s")action:String) : Call<MoviesModel>
 }

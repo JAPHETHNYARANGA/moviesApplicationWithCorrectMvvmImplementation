@@ -2,7 +2,7 @@ package com.example.moviesapp.domain.models
 
 data class MoviesModel(
     val Response: String,
-    val Search: List<Search>,
+    val Search: ArrayList<Search>,
     val totalResults: String
 )
 
