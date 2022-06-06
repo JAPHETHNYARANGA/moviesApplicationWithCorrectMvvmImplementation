@@ -37,13 +37,17 @@ class MainActivity : AppCompatActivity() {
             if(data != null)moviesAdapter.moviesListData(data.Search as ArrayList<Search>)
             moviesAdapter.notifyDataSetChanged()
         }
+
+
     }
 
     private fun initRecyclerView() {
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
-            moviesAdapter = MoviesAdapter()
+            moviesAdapter = MoviesAdapter(this@MainActivity)
             adapter = moviesAdapter
+
+
         }
     }
 }
